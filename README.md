@@ -56,7 +56,7 @@ npm install mysql geojson2wkt dotenv
 ### 运行脚本
 运行以下命令来执行整个处理流程，包括将 Shapefile 转换为 GeoJSON、切分 GeoJSON 文件，以及将数据导入 MySQL 数据库：
 ```bash
-python shp2json-cutjson-json2mysql.py
+python main.py
 ```
 
 ## 注意事项
