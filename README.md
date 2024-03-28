@@ -3,6 +3,8 @@
 项目简介。
 
 ## 环境配置
+python 3.9
+node  v12.14.0
 
 本项目使用 `.env` 文件来管理环境变量。请按照以下步骤配置环境变量：
 
@@ -19,10 +21,15 @@
    DB_NAME=数据库名称
 
    # py文件引用
-   SHP_PATH=Shapefile文件路径
-   OUTPUT_JSON_PATH=输出的GeoJSON文件路径
-   OUTPUT_CUT_DIR=切分后的GeoJSON文件输出目录
+   # 基础路径
+   BASE_PATH
 
+   # shp文件所在路径（包含shpfile文件名）
+   SHP_PATH=${BASE_PATH}\**.shp
+   # shp转换成的json文件路径（包含json文件名,如果路径不存在则创建）
+   OUTPUT_JSON_PATH=${BASE_PATH}\**.json
+   # json文件切分后的输出目录（如果路径不存在则创建）
+   OUTPUT_CUT_DIR=${BASE_PATH}\**
 ## 使用说明
 ### 环境准备
 确保已经安装了 Python 和以下 Python 包：
