@@ -19,10 +19,15 @@
    DB_NAME=数据库名称
 
    # py文件引用
-   SHP_PATH=Shapefile文件路径
-   OUTPUT_JSON_PATH=输出的GeoJSON文件路径
-   OUTPUT_CUT_DIR=切分后的GeoJSON文件输出目录
+   # 基础路径
+   BASE_PATH
 
+   # shp文件所在路径（包含shpfile文件名）
+   SHP_PATH
+   # shp转换成的json文件路径（包含json文件名,如果路径不存在则创建）
+   OUTPUT_JSON_PATH
+   # json文件切分后的输出目录（如果路径不存在则创建）
+   OUTPUT_CUT_DIR
 ## 使用说明
 ### 环境准备
 确保已经安装了 Python 和以下 Python 包：
