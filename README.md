@@ -23,11 +23,11 @@
    BASE_PATH
 
    # shp文件所在路径（包含shpfile文件名）
-   SHP_PATH
+   SHP_PATH=${BASE_PATH}\**.shp
    # shp转换成的json文件路径（包含json文件名,如果路径不存在则创建）
-   OUTPUT_JSON_PATH
+   OUTPUT_JSON_PATH=${BASE_PATH}\**.json
    # json文件切分后的输出目录（如果路径不存在则创建）
-   OUTPUT_CUT_DIR
+   OUTPUT_CUT_DIR=${BASE_PATH}\**
 ## 使用说明
 ### 环境准备
 确保已经安装了 Python 和以下 Python 包：
